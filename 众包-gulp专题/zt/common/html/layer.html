@@ -1,0 +1,57 @@
+<!--S 注册弹窗-->
+<div class="c_layer_wrapper J_brandWrapper">
+	<div class="main_con J_brandWrapper_oneStep">
+		<a href="javascript:void(0)" class="btn_close_layer J_closeBrandLayer"></a>
+		<div class="register_form">
+			<h2 class="form_title">
+				免费查询
+				<div class="form_desc">您需要办理哪些许可证？</div>
+			</h2>
+			<label for="" class="register_label" style="margin-bottom: 10px;">
+				<em></em>已有<span class="c_main">12112</span>人正在免费体检中
+			</label>
+			
+			<label for="classify" class="register_label">
+				<em>*</em><input type="text" placeholder="请输入作品类别" value=""/>
+			</label>
+			<label for="name" class="register_label">
+				<em>*</em><input type="text" placeholder="请输入您的称呼" value=""/>
+			</label>
+			<span class="c_save_tips"><img src="images/save.png" width="12"/>信息保护中，请放心填写</span>
+			<label for="phone" class="register_label">
+				<em>*</em><input type="text" placeholder="请输入手机号码"  value="手机号码错误" id="phone" class="error"/>
+			</label>
+			<a class="form_btn J_see_result" href="javascript:void(0)">立即查看结果</a>
+		</div>
+	</div>
+	<div class="main_con hei230  J_brandWrapper_twoStep" style="display: none;">
+		<a href="javascript:void(0)" class="btn_close_layer J_closeBrandLayer"></a>
+		<div class="c_result_box">
+			<h3>您的查询资料已经提交</br><strong>稍后客服将通过电话告知您结果</strong></h3>
+			<a class="form_btn J_closeBrandLayer" href="javascript:void(0);">确定</a>
+		</div>
+	</div>
+</div>
+<!--E 注册弹窗-->
+	
+<!--<script type="text/javascript">
+$(function(){
+	/*S 弹窗*/
+	//打开弹窗
+	$('.J_search').on('click',function(){
+		$(".J_brandWrapper").show();
+		$(".J_brandWrapper .J_brandWrapper_oneStep").show();
+		$('.J_brandWrapper_twoStep').hide();
+	});	
+	//弹窗下一步
+	$(".J_see_result").on("click",function(){
+		$(this).parents('.J_brandWrapper_oneStep').hide();
+		$(this).parents('.J_brandWrapper_oneStep').next(".J_brandWrapper_twoStep").show();
+	});	
+	//关闭弹窗
+	$(".J_closeBrandLayer").on("click",function(){
+		$(".J_brandWrapper").hide();
+	}); 	
+	/*E 弹窗*/
+})
+</script>-->

@@ -1,0 +1,94 @@
+<!--S 侧边悬浮-->
+<div class="side_suspension">
+	<div class="side_item ">
+		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=4008463777" target="_blank">
+			<i class="iconfont icon-qq text_center icon"></i>
+			<div class="intro text_center">QQ咨询</div>
+		</a>
+	</div>
+	<div class="side_item">
+		<i class="iconfont icon-telephone icon text_center"></i>
+		<div class="intro text_center">联系客服</div>
+		<div class="panel contact_server">
+			<div class="arrow"></div>
+            <div class="panel_head">
+            	<strong>联系客服</strong>
+            	<em>在线：9：00-18：30</em>
+            	<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=4008463777" target="_blank" class="qq_talk pull_right">
+            		<i class="iconfont icon-qq"></i>
+            		QQ交谈
+            	</a>
+            </div>
+            <div class="panel_body">
+            	<i class="iconfont icon-phone text_center pull_left"></i>
+            	<div class="phone">400-846-3777</div>
+            	<p>您可留下联系方式，我们主动联系您</p>
+            	<div class="input_wraper">
+            		<input type="text" placeholder="请输入您的手机号/QQ号" id="kf_phone"  class="pull_left c_main"/>
+            		<button class="btn_submit pull_right text_center" onclick="xcPublish('kf_phone', 23)">立即提交</button>
+            	</div>
+            	<div class="clear"></div>
+            </div>
+        </div>
+	</div>
+	<div class="side_item J_openOpinion">
+		<i class="iconfont icon-xiugai icon text_center"></i>
+		<div class="intro text_center">反馈意见</div>
+		<div class="panel opinion J_opinion">
+			<div class="arrow"></div>
+            <h6>
+            	一句话点评
+            	<div class="pull_right pointer J_closeOpinion">
+            		<i class="iconfont icon-close"></i>
+            	</div>
+            </h6>   
+            <textarea id="contentXc" onKeyUp="count(this)" class="advice_textarea c_main J_opinionText" rows="3" maxlength="300" placeholder="期待您的一句话的点评，不管是批评、感谢、建议，我们都细心聆听、心存感激、及时回复..."></textarea>
+            <p class="reminder J_content">还可以输入300字</p>
+            <div class="code_err">
+            	<i class="iconfont icon-warning pull_left"></i>验证码错误
+            </div>
+            <div class="verification_code">
+            	<input type="text" name="" id="validCodeXc" value="" class="pull_left c_main"/>
+            	<img id="validCodeImgXc" src="http://www.dadetong.com/site/index/validImgCode?t="+Math.random() onclick="this.src='http://www.dadetong.com/site/index/validImgCode?t='+Math.random()" alt="" class="img_code pull_left"/>
+            	<span class="change_code pull_left" onclick="change()">换一组</span>
+            	<div class="clear"></div>
+            </div> 
+            <div class="code_err" id="validCodeErr">
+            	<i class="iconfont icon-warning pull_left"></i>验证码错误
+            </div>
+            <div class="input_wraper">
+        		<input type="text" placeholder="手机号" id="contactWayXc" class="pull_left c_main">
+        		<button class="btn_submit pull_right text_center" onclick="insertFeedback()">立即提交</button>
+        	</div>
+            <div class="code_err" id="phoneErr">
+            	<i class="iconfont icon-warning pull_left"></i>验证码错误
+            </div>
+            <div class="advicetel">
+            	<h6>维权与监督</h6>
+                <div class="">
+                    <div class="pull_left">
+                        <div class="info">固话：400-846-3777</div>
+                        <div class="info">QQ：
+					       <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=4008463777" target="_blank" class="qq_talk">
+	                    		<i class="iconfont icon-qq"></i>
+	                    		QQ交谈
+	                    	</a>
+					    </div>
+                        <div class="info">手机：18135281132</div>
+                    </div>
+                    <div class="code text_center">
+                        <img src="../../common/images/wx_code.jpg">
+                        <span>客服经理</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+	</div>
+	<div class="side_item text_center J_toTop">
+		<i class="iconfont icon-arrow-up icon"></i>
+		<div class="intro">返回顶部</div>
+	</div>
+</div>
+<!--E 侧边悬浮-->

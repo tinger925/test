@@ -1,0 +1,37 @@
+$(function(){
+    //置顶
+	$(".J_toTop").on("click",function(){
+		$("html,body").animate({scrollTop:0},500);
+	})
+	//关闭意见反馈
+	$(".J_closeOpinion").on("click",function(){
+		$(".J_openOpinion").find(".J_opinion").css({display:"none"});
+	})
+	//编写反馈意见
+	$(".J_opinionText").on("click",function(){
+		$(".J_opinion").addClass("write_opinion");
+	})
+    //底部悬浮
+	$(".J_switchFooter").on("click",function(){
+		$(".J_footerSuspension").slideToggle();
+		$(".J_openFooter").slideToggle();
+	})
+	//关闭or打开注册弹窗
+	if($(".J_registerWrapper")){
+		$(".J_closeRegisterLayer").on("click",function(){
+			$(".J_registerWrapper").hide();
+		});
+		$(document).on("click",".J_openRegisterLayer",function(){
+			$(".J_registerWrapper").show();
+		})		
+	}
+	//关闭or打开登录弹窗
+	if($(".J_loginWrapper")){
+		$(".J_closeLoginLayer").on("click",function(){
+			$(".J_loginWrapper").hide();
+		});
+		$(document).on("click",".J_openLoginLayer",function(){
+			$(".J_loginWrapper").show();
+		})
+	}
+})
